@@ -6,8 +6,8 @@ type Cache struct {
 	cache map[string]interface{}
 }
 
-func (c *Cache) New() {
-	c.cache = make(map[string]interface{})
+func New() Cache {
+	return Cache{}
 }
 
 func (c *Cache) Set(key string, value interface{}) {
