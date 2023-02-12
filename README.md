@@ -9,7 +9,7 @@ usage example:
 	username, ok := cache.Get("userName")
 	fmt.Println(username, ok)
 
-	ok = cache.Delete("userId")
+	ok = cache.Delete("userName")
 
 	username, ok = cache.Get("userName")
 	fmt.Println(username, ok)
