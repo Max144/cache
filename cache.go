@@ -12,7 +12,7 @@ type Cache struct {
 
 func New() Cache {
 	cache := Cache{make(map[string]interface{}), make(map[string]time.Time)}
-	cache.deletingExpiredCacheWorker()
+	go cache.deletingExpiredCacheWorker()
 	return cache
 }
 
